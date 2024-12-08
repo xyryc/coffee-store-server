@@ -1,9 +1,9 @@
 # Coffee Store Server
 
-1. Install _dotenv_ npm package:
+1. Install packages:
 
 ```bash
-npm i dotenv
+npm install
 ```
 
 2. Create a _.env_ file:

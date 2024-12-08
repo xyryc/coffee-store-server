@@ -21,9 +21,9 @@ const client = new MongoClient(uri, {
 });
 
 async function run() {
-  try {
-    // Connect the client to the server	(optional starting in v4.7)
-    await client.connect();
+  // try {
+  //   // Connect the client to the server	(optional starting in v4.7)
+  //   await client.connect();
 
     const coffeeCollection = client.db("coffeeDB").collection("coffee");
     const userCollection = client.db("coffeeDB").collection("users");
@@ -118,10 +118,10 @@ async function run() {
     console.log(
       "Pinged your deployment. You successfully connected to MongoDB!"
     );
-  } finally {
-    // Ensures that the client will close when you finish/error
-    // await client.close();
-  }
+  // } finally {
+  //   // Ensures that the client will close when you finish/error
+  //   // await client.close();
+  // }
 }
 run().catch(console.dir);
 
